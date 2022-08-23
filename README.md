@@ -22,3 +22,5 @@ go run ./publisher.go <filename1 filename2...> ## if publish few model and any f
 cd test/testing
 go test -v
 ```
+## End completion service
+`Ctrl+C`
