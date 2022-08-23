@@ -1,0 +1,1 @@
+CREATE TABLE orders(id text not NULL PRIMARY KEY, data jsonb NOT NULL)

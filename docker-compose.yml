@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  database:
+    image: postgres:alpine3.16
+    environment:
+      POSTGRES_DB: WB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty
+    volumes:
+      - './docker/table.sql:/docker-entrypoint-initdb.d/init.sql'
+    ports:
+      - 5432:5432
+  nats:
+    image: nats-streaming:alpine3.15
+    ports:
+      - 4222:4222
+      - 8222:8222
+
+
+              
+             
